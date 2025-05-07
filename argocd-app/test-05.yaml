@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: lightspeed-test-05
+  namespace: openshift-gitops
+  labels:
+    type: benchmark
+spec:
+  destination:
+    name: in-cluster
+    namespace: default
+  project: default
+  source:
+    path: lightspeed-benchmark/test-05
+    repoURL: https://github.com/joelapatatechaude/ols-test
+    targetRevision: main
+
