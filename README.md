@@ -11,6 +11,17 @@ oc apply -f .
 
 Of course, since each of the namespaces are broken on purpose, argocd won't give you a green tic after deploying the resources. That's expected.
 
+## Deploying directly
+Something like this should work, for each test:
+```bash
+cd ols-test/lightspeed-benchmark/test-01
+oc apply -f .
+```
+**test-06** has a sub directory, the recursive flag is needed:
+```
+cd ols-test/lightspeed-benchmark/test-06
+oc apply -f . --recursive
+```
 
 ## Warnings
 test-06 has on purpose some finalizer hanging around. This means that if you legitimeltly want to remove the namespace from your cluster, well, you will have to remove the finalizers. Argocd won't do it for you.
