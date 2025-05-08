@@ -1,8 +1,8 @@
 # Some troubleshooting Scenarios for openshift lightspeed testing / demo
 
 
-## Deploying
-You can use the argo app to better manage the test (reset).
+## Deploying with ArgoCD
+You can use the argo app to better manage the test (reset the changes when needed).
 something like this should work:
 ```bash
 cd ols-test/argocd-app
