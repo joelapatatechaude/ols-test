@@ -24,7 +24,7 @@ oc apply -f . --recursive
 ```
 
 ## Warnings
-test-06 has on purpose some finalizer hanging around. This means that if you legitimeltly want to remove the namespace from your cluster, well, you will have to remove the finalizers. Argocd won't do it for you.
+test-06 has on purpose some finalizer hanging around. This means that if you legitimeltly want to remove the namespace from your cluster, well, you will have to remove the finalizers. Argocd won't do it for you. If you need help removing those fanilzer, well, ask LightSpeed!! Or check the solution https://trbl-workshop.cszevaco.com/workshop/exercise_06#solution
 
 ## solution to the exercise
 
