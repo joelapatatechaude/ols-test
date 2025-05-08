@@ -18,7 +18,7 @@ cd ols-test/lightspeed-benchmark/test-01
 oc apply -f .
 ```
 **test-06** has a sub directory, the recursive flag is needed:
-```
+```bash
 cd ols-test/lightspeed-benchmark/test-06
 oc apply -f . --recursive
 ```
