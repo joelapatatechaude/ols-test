@@ -14,4 +14,5 @@ spec:
     path: lightspeed-benchmark/test-06
     repoURL: https://github.com/joelapatatechaude/ols-test
     targetRevision: main
-
+    directory:
+      recurse: true
