@@ -24,9 +24,9 @@ oc apply -f . --recursive
 ```
 
 ## Warnings
-test-06 has on purpose some finalizer hanging around. This means that if you legitimeltly want to remove the namespace from your cluster, well, you will have to remove the finalizers. Argocd won't do it for you. If you need help removing those fanilzer, well, ask LightSpeed!! Or check the solution https://trbl-workshop.cszevaco.com/workshop/exercise_06#solution
+test-06 on purpose has some finalizer hanging around. This means that if you legitimeltly want to remove the namespace from your cluster, well, you will have to remove the finalizers. Argocd won't do it for you. If you need help, well, ask LightSpeed!! Or read the solution -> https://trbl-workshop.cszevaco.com/workshop/exercise_06#solution
 
-## solution to the exercise
+## Solution to the tests
 
 https://trbl-workshop.cszevaco.com/workshop
 
@@ -34,6 +34,6 @@ https://trbl-workshop.cszevaco.com/workshop
 
 https://youtu.be/nR9sLKmgPdI
 
-## blog post
-
+## Blog post
+This blog post is using the 6 tests as a benchmark to test a few LLM model used with LightSpeed: granite-3.2-8b-instruct, granite-3.2-2b-instruct, and openai gpt-4o-mini
 https://blog.cszevaco.com/blog/lightspeed-benchmark
