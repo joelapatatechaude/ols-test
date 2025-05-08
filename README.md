@@ -1,11 +1,15 @@
 # Some troubleshooting Scenarios for openshift lightspeed testing / demo
 
 
-
 ## Deploying
 You can use the argo app to better manage the test (reset).
+something like this should work:
+```bash
+cd ols-test/argocd-app
+oc apply -f .
+```
 
-Of course, since things are broken on purpose, argocd won't give you a green tic after deploying the resources. That's expected.
+Of course, since each of the namespaces are broken on purpose, argocd won't give you a green tic after deploying the resources. That's expected.
 
 
 ## Warnings
